@@ -1,0 +1,16 @@
+<form ng-submit="vm.submitForm()">
+
+  <div class="form-group question" ng-repeat="question in vm.questions" ng-if="vm.data.currentQuestion >= $index">
+    <label for="{{question.fieldName}}">{{question.question}}</label>
+    <input name="{{question.fieldName}}" id="{{question.fieldName}}" type="text" class="form-control" placeholder="{{question.placeholder}}" tabindex="{{$index}}">
+  </div>
+  
+  <div class="form-group">
+      <a class="btn btn-cancel" ng-click="vm.previous()">Previous</a>
+
+      <a class="btn btn-success btn-lg" ng-click="vm.submitForm()">Next</a> 
+    
+    press ENTER
+  </div>
+
+</form>
