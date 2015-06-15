@@ -46,7 +46,7 @@
     {
       question: "What do we call you, stranger?",
       fieldName: "name",
-      placeholder: "Full Name"
+      placeholder: "name"
     },
     {
       question: "Where can we reach you?",
@@ -56,14 +56,39 @@
     {
       question: "Give us your digits too?",
       fieldName: "phoneNumber",
-      placeholder: "Phonenumber",
+      placeholder: "deets",
       optional: true,
     },
     {
       question: "What category is your app?",
       fieldName: "appCategory",
-      placeholder: "Health/Fitness",
+      placeholder: "Health & Fitness",
       optional: true,
+      options: [
+        'Books',
+        'Business',
+        'Catalogs',
+        'Education',
+        'Entertainment',
+        'Finance',
+        'Food & Drink',
+        'Games',
+        'Health & Fitness',
+        'Lifestyle',
+        'Medical',
+        'Music',
+        'Navigation',
+        'News',
+        'Photo & Video',
+        'Productivity',
+        'Reference',
+        'Social Networking',
+        'Sports',
+        'Travel',
+        'Utilities',
+        'Weather',
+      ],
+      selectMultiple: false
     },
     ]
     vm.submitForm = function(){

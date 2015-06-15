@@ -2,7 +2,19 @@
 
   <div class="form-group question" ng-repeat="question in vm.questions" ng-if="vm.data.currentQuestion >= $index">
     <label for="{{question.fieldName}}">{{question.question}}</label>
-    <input name="{{question.fieldName}}" id="{{question.fieldName}}" type="text" class="form-control" placeholder="{{question.placeholder}}" tabindex="{{$index}}">
+    <input ng-if="!question.options" name="{{question.fieldName}}" id="{{question.fieldName}}" type="text" class="form-control" placeholder="{{question.placeholder}}" tabindex="{{$index}}">
+    <ul ng-if="question.options && question.selectMultiple">
+      <li ng-repeat="option in question.options">
+        <label for="">{{option}}</label>
+        <input   tabindex="{{$index}}" name="{{question.fieldName}}" id="{{question.fieldName}}" type="checkbox" class="form-control" placeholder="{{question.placeholder}}">
+      </li> 
+    </ul>
+    <ul class="list-group" ng-if="question.options && !question.selectMultiple">
+      <li ng-repeat="option in question.options">
+        <label class="list-group-item" for="">{{option}}</label>
+        <input class="badge" tabindex="{{$index}}" name="{{question.fieldName}}" id="{{question.fieldName}}" type="radio" class="form-control" placeholder="{{question.placeholder}}">
+      </li> 
+    </ul>
   </div>
   
   <div class="form-group">

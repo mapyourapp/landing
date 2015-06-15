@@ -6,7 +6,7 @@ angular.module('mapYourApp', [
   'mapYourApp.flux',
   'ui.router',
   'ngFlux',
-]).
-config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider,$locationProvider, $urlRouterProvider) {
+])
+.config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider,$locationProvider, $urlRouterProvider) {
   
 }]);
