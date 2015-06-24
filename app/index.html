@@ -14,6 +14,7 @@
   <link href="css/startup.css" rel="stylesheet">
 
   <!-- Additions CSS -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
   <link href="css/additions.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,30 +34,6 @@
 <body ng-controller="View1Ctrl">
   <div class="preloader"></div>
 
-  <!-- Fixed navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="images/logo-small.png" alt="logo"></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-
-
 
   <!-- Parallax Header Starts -->
   <main id="top" class="masthead" role="main">
@@ -67,11 +44,11 @@
       <!-- Startup Logo -->
       <h1><strong>MapYourApp</strong></h1>
       <!-- Hero Title -->
-      <h1>The Most <span data-typer-targets="Easy,Effective,Advanced,Secure,Friendly,Simple">Simple</span> and <strong>Powerful Way</strong> <br>
+      <h1>The Most <span data-typer-targets="Effective,Secure,Friendly,Simple">Simple</span> and <strong>Powerful Way</strong> <br>
         to <strong>start</strong> your app</h1>
         <!--  Scroll to Explore --> 
         <div class="row">
-          <div class="col-md-12 breath text-center"> <a href="#explore" class="btn btn-success btn-lg scrollto">I HAVE AN APP IDEA</a> </div>
+          <div class="col-md-12 col-sm-12 breath text-center"> <a href="#explore" class="btn btn-success btn-lg scrollto">I HAVE AN APP IDEA</a> </div>
         </div>
         <!-- // Scroll to Explore Ends --> 
       </div>
@@ -86,7 +63,32 @@
           <br>
           <br>
           <div class="col-md-4 col-md-offset-4">
-            <discovery-form></discovery-form>
+            <!-- Begin MailChimp Signup Form -->
+            
+            <style type="text/css">
+              #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+            <form action="//mapyourapp.us11.list-manage.com/subscribe/post?u=c00251b2c3356ac3367a9a3dc&amp;id=9cbaafeded" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+            </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_c00251b2c3356ac3367a9a3dc_9cbaafeded" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
           </div>
         </div>
 
@@ -94,121 +96,6 @@
 
     </div>
     <!-- // Container Ends --> 
-
-    <!-- Grey Highlight Section -->
-    <div class="highlight testimonials">
-      <div class="container"> 
-
-        <!-- Testimonials -->
-        <div class="section-title">
-          <h2>What our customers said</h2>
-          <h4>Don't take our word. See our testimonials </h4>
-        </div>
-        <section class="row breath">
-          <div class="col-md-6">
-            <div class="testblock">Startup is really a great template to get strarted with. With its awesome features and easy customization with unbounce. This template made my day. Very recommended.</div>
-            <div class="clientblock"> <img src="images/customer-img-1.jpg" alt=".">
-              <p><strong>Johnathan Doe</strong> <br>
-                Founder and CEO of <a href="#">Square Inc</a></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="testblock">I like this template very much. easy customization and perfect support. This is the finest startup template I've ever seen. Its minimal, Flat and responsive too. I'm really happy with their service.</div>
-              <div class="clientblock"> <img src="images/customer-img-2.jpg" alt=".">
-                <p><strong>Michael  Slats</strong> <br>
-                  Project Lead at <a href="#">Airbnb.com</a></p>
-                </div>
-              </div>
-            </section>
-            <!-- // End Testimonials --> 
-
-          </div>
-        </div>
-        <!-- // End Grey Highlight Section --> 
-
-        <!-- Container -->
-        <div class="container"> 
-
-          <!-- Pricing -->
-          <div class="section-title">
-            <h2>Honest pricing. No surprises.</h2>
-            <h4>No contract. No risk. No credit card required. </h4>
-          </div>
-          <section class="row breath planpricing">
-            <div class="col-md-4">
-              <div class="pricing color1">
-                <div class="planname">Personal</div>
-                <div class="price"> <span class="curr">$</span>14<span class="per">/MO</span></div>
-                <div class="billing">Billed Annually</div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="pricing color2">
-                <div class="planname">Agency</div>
-                <div class="price"> <span class="curr">$</span>49<span class="per">/MO</span></div>
-                <div class="billing">Billed Annually</div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="pricing color3">
-                <div class="planname">Enterprise</div>
-                <div class="price"> <span class="curr">$</span>99<span class="per">/MO</span></div>
-                <div class="billing">Billed Annually</div>
-              </div>
-            </div>
-          </section>
-          <!-- // End Pricing --> 
-
-          <!-- FAQ -->
-          <div class="section-title">
-            <h5>Frequently Asked Questions</h5>
-          </div>
-          <section class="row faq breath">
-            <div class="col-md-6">
-              <h6>How does the free trial work?</h6>
-              <p>Our 10 day trial is 100% free and does not require credit card information to start. If at the end of your trial you would like to upgrade, great. If not, you can cancel your account altogether, or let us mark it as inactive for you to come back to later.</p>
-              <h6>Can I switch plans later?</h6>
-              <p>Absolutely. You can switch between our paid plans, or cancel your account altogether, whenever you like. We will adjust any payments accordingly.</p>
-            </div>
-            <div class="col-md-6">
-              <h6>Do I need to choose a plan now?</h6>
-              <p>No. You get the full featured, unlimited version of Startup completely free for 10 days. Once you're ready to upgrade, you may choose a plan which suits your needs.</p>
-              <h6>What payment types do you accept?</h6>
-              <p>We accept payments from MasterCard, Visa, Visa Debit and American Express. We do not accept PayPal. Remember, you do not need to supply card details to start your free trial.</p>
-            </div>
-          </section>
-          <!-- // End FAQ --> 
-
-        </div>
-        <!-- // Container Ends --> 
-
-        <!-- Parallax Footer Starts -->
-        <main class="footercta" role="main">
-          <div class="container"> 
-
-            <!-- Hero Title -->
-            <h1>The Most Simple & Yet <strong>Powerful Way</strong> <br>
-              to <strong>launch</strong> your startup</h1>
-              <!-- Mailchimp Subscribe form -->
-              <div class="row">
-                <div class="col-md-12 breath text-center"> <a href="#top" class="btn btn-success btn-lg gototop">GET EARLY ACCESS</a> </div>
-              </div>
-            </div>
-          </main>
-          <!-- // Parallax Footer Ends --> 
-
-          <!-- Container -->
-          <div class="container">
-            <section class="row breath">
-              <div class="col-md-12 footerlinks"> <a href="#">About</a> <a href="#">Pricing</a> <a href="#">Blog</a> <a href="#">Help</a> <a href="#">Contact</a> <a href="#">Privacy</a> <a href="#">Terms</a>
-                <p>&copy; 2014 Startup. All Rights Reserved</p>
-              </div>
-            </section>
-          </div>
-          <!-- // Container Ends --> 
-
-          <!-- JS and analytics only. --> 
-<!-- Bootstrap core JavaScript
   ================================================== --> 
   <!-- Placed at the end of the document so the pages load faster --> 
   <script src="bower_components/angular/angular.js"></script>
